@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact us</title>
+    <meta name="author" content="Udit Kumar Chatterjee" />
+    <meta name="description" content="Welcome to the most extraordinary hotels in Kolkata, India" />
+    <meta name="keywords" content="hotel,kolkata,india hotels,luxury hotels">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/CSS/mobile.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="nav-content container">
+                <h2 class="logo"><a href="/HTML/home.html">The Plaza Hotel</a></h2>
+                <ul>
+                    <li><a href="/HTML/home.html">Home</a></li>
+                    <li><a href="/HTML/about.html">About Us</a></li>
+                    <li><a href="/HTML/contacts.html" class="current">Contact Us</a></li>
+                    <li><a href="#" id="logoutBtn">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact-form">
+        <div class="container py-3">
+            <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+            <p class="lead-light">Please fill out the below form to contact us</p>
+            <form id="contactForm" action="/HTML/home.html" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" pattern="[A-Za-z ]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="features" class="contact-info">
+        <div class="block block-1">
+            <i class="fa-solid fa-location-dot fa-3x"></i>
+            <h3>Location</h3>
+            <p> Pune, India - 411005</p>
+        </div>
+        <div class="block block-2">
+            <i class="fa-solid fa-phone fa-3x"></i>
+            <h3>Phone Number</h3>
+            <p>+91-123-456-7890</p>
+        </div>
+        <div class="block block-3">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+            <h3>Email Address</h3>
+            <p>theplazahotel@gmail.com</p>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-dark">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <p>The Plaza Hotel &copy; 2024, All Rights Reserved</p>
+    </footer>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = '/index.html';
+        });
+
+        function submitForm(event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+            let namePattern = /^[A-Za-z ]+$/;
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            if (!namePattern.test(name)) {
+                alert('Please enter a valid name without digits or special characters.');
+            } else if (!emailPattern.test(email)) {
+                alert('Please enter a valid Gmail email address.');
+            } else if (message.trim() === '') {
+                alert('Please enter a message.');
+            } else {
+                window.location.href = '/HTML/home.html';
+            }
+        }
+    </script>
+    
+      
+</body>
+
+</html>
+

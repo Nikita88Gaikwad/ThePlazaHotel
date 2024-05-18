@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About us</title>
+	<meta name="author" content="Udit Kumar Chatterjee" />
+    <meta name="description" content="Welcome to the most extraordinary hotels in Kolkata, India" />
+    <meta name="keywords" content="hotel,kolkata,india hotels,luxury hotels">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/CSS/mobile.css">
+    <link rel="icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <div class="nav-content container">
+            <h2 class="logo"><a href="/HTML/home.html">The Plaza Hotel</a></h2>
+            <ul>
+                <li><a href="/HTML/home.html">Home</a></li>
+                <li><a href="/HTML/about.html" class="current">About Us</a></li>
+                <li><a href="/HTML/contacts.html">Contact Us</a></li>
+                <li><a href="#" id="logoutBtn">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="about-info" class="bg-light py-3">
+    <div class="info-text plx-3 py-3">
+        <h1 class="l-heading"><span class="text-primary">About</span> The Plaza Hotel</h1>
+        <p class="lead-light">At The Plaza Hotel, we redefine luxury and comfort, offering a blend of modern amenities and traditional hospitality. Nestled in the heart of Pune, our hotel is a haven for travelers seeking a memorable stay experience. Founded in 2024, The Plaza Hotel has been a landmark in Pune's hospitality landscape. With a rich history of providing exceptional service and a commitment to guest satisfaction, we have become a preferred choice for business and leisure travelers alike.</p>
+        <p class="lead-light">Conveniently located in the bustling city center of Pune, our hotel provides easy access to major business districts, shopping centers, and popular tourist attractions. Whether you're here for work or leisure, you'll find everything you need within reach. Our rooms and suites are designed to provide a perfect blend of comfort and style. Each room is meticulously appointed with modern amenities, ensuring a relaxing stay for our guests. From cozy single rooms to luxurious suites, we cater to every traveler's needs.</p>
+        <p class="lead-light">Indulge your taste buds at our exquisite restaurants offering a delightful culinary journey. From authentic local flavors to international cuisines, our chefs curate a diverse menu to satisfy every palate.At The Plaza Hotel, we go above and beyond to make your stay unforgettable. Enjoy access to our state-of-the-art fitness center, rejuvenating spa treatments, and seamless concierge services. Our dedicated team is always ready to assist you with any request, ensuring a hassle-free experience.</p>
+
+        <p class="lead-light">For reservations and inquiries, please contact us at theplazahotel@gmail.com or +91 1234567890. We look forward to welcoming you to The Plaza Hotel, where luxury meets hospitality in Pune.</p>
+    </div>
+    <div class="info-image">
+        <img src="/images/about-us.jpg" alt="hotel-about-us">
+    </div>
+</section>
+
+<section id="testimonials" class="py-3">
+    <div class="container py-3">
+        <h2 class="l-heading">What Our Guests Say</h2>
+        <div class="comments bg-primary">
+            <img src="/images/jenifer-person-1.jpg" alt="Jenifer">
+            <p class="lead-light">I had a fantastic experience at The Plaza Hotel. The service was impeccable, and the attention to detail was remarkable. The hotel's facilities, especially the fitness center and spa, were top-notch. The food at the restaurant was delicious, offering a great variety of dishes. I would highly recommend this hotel to anyone visiting Pune.</p>
+        </div>
+        <div class="comments bg-primary">
+            <img src="/images/daniel-person-2.jpg" alt="Daniel">
+            <p class="lead-light">My stay at The Plaza Hotel was fantastic! The staff was incredibly attentive and made me feel right at home. The room was spacious, clean, and had a stunning view of Pune city. I especially loved the breakfast spread; it had a great variety of options. I highly recommend this hotel for anyone visiting Pune.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="bg-dark">
+    <i class="fa-brands fa-facebook fa-2x"></i>
+    <i class="fa-brands fa-twitter fa-2x"></i>
+    <i class="fa-brands fa-instagram fa-2x"></i>
+    <p>The Plaza Hotel &copy; 2024, All Rights Reserved</p>
+</footer>
+
+<script>
+    document.getElementById('logoutBtn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    window.location.href = '/index.html'; 
+});
+</script>
+
+</body>
+</html>
