@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fitness Room - The Plaza Hotel</title>
+    <meta name="description" content="Discover why The Plaza Hotel's location in Pune is perfect for you" />
+    <meta name="keywords" content="hotel, Pune, location, luxury, comfort">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/CSS/greatLocation.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/CSS/mobile.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/fitnessRoom.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-content container">
+                <h2 class="logo"><a href="/HTML/home.html">The Plaza Hotel</a></h2>
+                <ul>
+                    <li><a href="/HTML/home.html">Home</a></li>
+                    <li><a href="/HTML/about.html">About Us</a></li>
+                    <li><a href="/HTML/contacts.html">Contact Us</a></li>
+                    <li><a href="#" id="logoutBtn">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1 class="section-heading">State-of-the-Art Fitness Room</h1>
+        <p class="section-description">Stay fit and healthy during your stay at The Plaza Hotel. Our fitness room is equipped with modern equipment to meet all your workout needs.</p>
+        <div class="fitness-container">
+            <div class="fitness-card">
+                <img src="/images/fitness1.jpg" alt="Fitness Room Equipment">
+                <h3>Modern Equipment</h3>
+                <p>Our fitness room is equipped with the latest fitness equipment to ensure you have a complete workout experience.</p>
+            </div>
+            <div class="fitness-card">
+                <img src="/images/fitness2.jpg" alt="Cardio Machines">
+                <h3>Cardio Machines</h3>
+                <p>Enjoy a variety of cardio machines including treadmills, ellipticals, and stationary bikes to keep your heart healthy.</p>
+            </div>
+            <div class="fitness-card">
+                <img src="/images/fitness3.jpg" alt="Strength Training">
+                <h3>Strength Training</h3>
+                <p>Our strength training area is equipped with free weights, weight machines, and more to help you build muscle.</p>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer id="footer" class="bg-dark">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <p>The Plaza Hotel &copy; 2024, All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = '/index.html';
+        });
+    </script>
+</body>
+
+</html>

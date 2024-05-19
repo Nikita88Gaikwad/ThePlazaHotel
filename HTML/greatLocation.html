@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Great Location - The Plaza Hotel</title>
+    <meta name="description" content="Discover why The Plaza Hotel's location in Pune is perfect for you" />
+    <meta name="keywords" content="hotel, Pune, location, luxury, comfort">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/CSS/greatLocation.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/CSS/mobile.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-content container">
+                <h2 class="logo"><a href="/HTML/home.html">The Plaza Hotel</a></h2>
+                <ul>
+                    <li><a href="/HTML/home.html">Home</a></li>
+                    <li><a href="/HTML/about.html">About Us</a></li>
+                    <li><a href="/HTML/contacts.html">Contact Us</a></li>
+                    <li><a href="#" id="logoutBtn">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="location-info">
+        <div class="container py-3">
+            <h1 class="l-heading"><span class="text-primary">Our</span> Location</h1>
+            <p class="lead-light">Discover why The Plaza Hotel's location in Pune is perfect for you</p>
+            <div class="location-features">
+                <div class="feature">
+                    <h3>Accessibility</h3>
+                    <p>Our hotel is easily accessible from major transport hubs including the airport and railway station, ensuring a hassle-free arrival and departure.</p>
+                </div>
+                <div class="feature">
+                    <h3>Nearby Attractions</h3>
+                    <p>Explore a variety of nearby attractions such as historical sites, shopping centers, and entertainment options, all within a short distance from our hotel.</p>
+                </div>
+                <div class="feature">
+                    <h3>Business Districts</h3>
+                    <p>Perfect for business travelers, our location offers easy access to Pune's major business districts and corporate offices.</p>
+                </div>
+                <div class="feature">
+                    <h3>Dining and Nightlife</h3>
+                    <p>Enjoy the vibrant dining and nightlife scene with a wide range of restaurants, cafes, and bars located just minutes away.</p>
+                </div>
+                <div class="feature">
+                    <h3>Scenic Views</h3>
+                    <p>Our hotel provides stunning views of the cityscape and surrounding areas, adding to the luxury and comfort of your stay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-dark">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <p>The Plaza Hotel &copy; 2024, All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = '/index.html';
+        });
+    </script>
+</body>
+
+</html>

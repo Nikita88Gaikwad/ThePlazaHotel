@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Free Meals - The Plaza Hotel</title>
+    <meta name="description" content="Discover why The Plaza Hotel's location in Pune is perfect for you" />
+    <meta name="keywords" content="hotel, Pune, location, luxury, comfort">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/CSS/greatLocation.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/CSS/mobile.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/freeMeals.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-content container">
+                <h2 class="logo"><a href="/HTML/home.html">The Plaza Hotel</a></h2>
+                <ul>
+                    <li><a href="/HTML/home.html">Home</a></li>
+                    <li><a href="/HTML/about.html">About Us</a></li>
+                    <li><a href="/HTML/contacts.html">Contact Us</a></li>
+                    <li><a href="#" id="logoutBtn">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Free Meals for Our Guests</h1>
+        <p>At The Plaza Hotel, we believe in offering the best hospitality experience. Enjoy our complimentary meals during your stay.</p>
+        <div class="meals-container">
+            <div class="meal-card">
+                <img src="/images/breakfast.jpg" alt="Breakfast">
+                <h3>Delicious Breakfast</h3>
+                <p>Start your day with a variety of breakfast options, including fresh fruits, pastries, and hot beverages.</p>
+            </div>
+            <div class="meal-card">
+                <img src="/images/lunch.png" alt="Lunch">
+                <h3>Sumptuous Lunch</h3>
+                <p>Indulge in our gourmet lunch menu, featuring a range of international and local dishes prepared by our chefs.</p>
+            </div>
+            <div class="meal-card">
+                <img src="/images/dinner.png" alt="Dinner">
+                <h3>Exquisite Dinner</h3>
+                <p>Enjoy a fine dining experience with our exquisite dinner offerings, crafted to delight your taste buds.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="bg-dark">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <p>The Plaza Hotel &copy; 2024, All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = '/index.html';
+        });
+    </script>
+</body>
+
+</html>
